@@ -19,11 +19,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        viewModel= ViewModelProviders.of(this).get(MyViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(MyViewModel::class.java)
 
-        val frutasObserver = Observer<List<Frutas>>{
-            Log.d("Frutas:",it.toString())
+        val frutasObserver = Observer<List<Frutas>> {
+            Log.d("Frutas:", it.toString())
         }
-        viewModel.getListaFrutrasLiveData().observe(this,frutasObserver)
+        viewModel.getListaFrutrasLiveData().observe(this, frutasObserver)
     }
 }
