@@ -6,6 +6,7 @@ class FrutasDataSet {
     fun crearListaDeFrutas(): List<Frutas> {
         return listOf(
             Frutas("Manzana", "Rojo", 4.5F, 200.0F)
+
         )
 
     }
