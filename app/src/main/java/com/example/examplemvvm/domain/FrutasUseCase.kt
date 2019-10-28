@@ -6,6 +6,7 @@ import com.example.examplemvvm.ui.model.Frutas
 class FrutasUseCase {
 
     val frutasDataSet = FrutasDataSet()
+
     fun obtenerListaDeFrutas(): List<Frutas> {
         return frutasDataSet.crearListaDeFrutas()
     }
