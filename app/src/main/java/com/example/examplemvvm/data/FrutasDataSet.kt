@@ -4,8 +4,9 @@ import com.example.examplemvvm.ui.model.Frutas
 
 class FrutasDataSet {
     fun crearListaDeFrutas():List<Frutas>{
-        return listOf(Frutas("Manzana","Rojo",4.5F,200.0F ))
-        Frutas("Manzana","Rojo",4.5F,200.0F )
-        Frutas("Manzana","Rojo",4.5F,200.0F )
+        return listOf(
+            Frutas("Manzana","Rojo",4.5F,200.0F ))
+            Frutas("Manzana","Rojo",4.5F,200.0F )
+            Frutas("Manzana","Rojo",4.5F,200.0F )
     }
 }
