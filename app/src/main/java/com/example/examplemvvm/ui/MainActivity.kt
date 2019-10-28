@@ -2,6 +2,7 @@ package com.example.examplemvvm.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.examplemvvm.R
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
 
         val frutasObserver = Observer<List<Frutas>> {
-            // Log.d("Frutas:", it[0].nombreFruta)
+             Log.d("Frutas:", it[0].nombreFruta)
             txtnombre.setText(it[0].nombreFruta)
             txtcolor.setText(it[0].colorFruta)
             txtprecio.setText(it[0].precioFruta.toString())
