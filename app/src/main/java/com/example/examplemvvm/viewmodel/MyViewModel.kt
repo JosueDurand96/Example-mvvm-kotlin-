@@ -15,6 +15,9 @@ class MyViewModel :ViewModel() {
         listData.value = listaFrutas
     }
 
+    init {
+        getListaFrutras()
+    }
     fun getListaFrutras(){
         setListData(frutasUseCase.obtenerListaDeFrutas())
     }
